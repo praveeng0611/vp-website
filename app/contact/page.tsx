@@ -186,4 +186,49 @@ export default function ContactPage() {
 
             {/* Engagements */}
             <div className="card-glow p-6">
-           
+              <h3 className="font-serif font-bold text-lg mb-4" style={{ color: 'var(--text)' }}>Speaking & Workshops</h3>
+              <ul className="space-y-3 text-sm">
+                {[
+                  'Keynote speaking at corporate events and summits',
+                  'Negotiation masterclasses and workshops',
+                  'Executive coaching and advisory',
+                  'Media interviews and podcasts',
+                  'Academic lectures and business school sessions',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-2" style={{ color: 'var(--text-muted)' }}>
+                    <span className="mt-0.5 font-bold flex-shrink-0" style={{ color: 'var(--gold)' }}>✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Book */}
+            <div className="card-glow p-6">
+              <p className="font-serif italic text-sm mb-1" style={{ color: 'var(--gold)' }}>The Negotiation Code</p>
+              <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>Beyond the Table · INR 699 / $27</p>
+              <div className="flex gap-2 flex-wrap">
+                <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3">Amazon India</a>
+                <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Flipkart</a>
+                <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Amazon US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote */}
+      <section
+        className="py-16 px-6 text-center"
+        style={{ background: 'linear-gradient(135deg, #1a1408, #0a0a0a)', borderTop: '1px solid var(--accent-border)' }}
+      >
+        <div className="max-w-2xl mx-auto">
+          <p className="font-serif italic text-lg md:text-xl mb-4" style={{ color: 'var(--text-muted)' }}>
+            &ldquo;The strongest negotiators are those who understand the unseen forces shaping every conversation.&rdquo;
+          </p>
+          <p className="text-sm" style={{ color: 'var(--gold)' }}>— Dr. Vikas Prasad, The Negotiation Code</p>
+        </div>
+      </section>
+    </>
+  )
+}
