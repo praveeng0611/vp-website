@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #0A0A0A;
+  --bg-card:   #111111;
+  --bg-alt:    #141414;
+  --border:    #2a2a2a;
+  --text:      #F5F0E8;
+  --text-muted: #A89C8A;
+  --text-subtle: #6B6055;
+  --gold:      #D4AF37;
+  --gold-light: #E8C547;
+  --gold-dark:  #A07820;
+  --accent-bg: rgba(212,175,55,0.08);
+  --accent-border: rgba(212,175,55,0.25);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ── */
+.font-serif { font-family: 'Playfair Display', Georgia, serif; }
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-line {
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--accent-border);
+}
+
+.card-glow {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.card-glow:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 8px 48px rgba(212,175,55,0.08);
+}
+
+/* ── Buttons ── */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: #0A0A0A;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: opacity 0.2s, transform 0.15s;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.btn-gold:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent-border);
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+.btn-outline:hover {
+  background: var(--accent-bg);
+  border-color: var(--gold);
+}
+
+/* ── Section label ── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--gold);
+}
+
+/* ── Divider ── */
+.divider { border-top: 1px solid var(--border); }
+
+/* ── Quote styling ── */
+.blockquote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ── Navbar ── */
+.navbar {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Blog content ── */
+.prose-vp h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; }
+.prose-vp p  { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem; }
+.prose-vp strong { color: var(--text); font-weight: 600; }
+
+/* ── Star rating ── */
+.stars { color: var(--gold); letter-spacing: 2px; }
