@@ -16,15 +16,57 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-6" style={{ background: 'var(--bg)', borderBottom: '1px solid var(--border)' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="section-label mb-4">Contact</div>
-          <h1 className="font-serif font-black text-5xl md:text-6xl leading-tight mb-4" style={{ color: 'var(--text)' }}>
-            Let&apos;s<br/><span className="gradient-gold">Connect</span>
-          </h1>
-          <p className="text-lg max-w-xl" style={{ color: 'var(--text-muted)' }}>
-            For speaking engagements, media enquiries, workshop facilitation, or simply to share your thoughts on the book.
-          </p>
+      <section
+        className="pt-32 pb-20 px-6 relative overflow-hidden"
+        style={{ background: 'radial-gradient(ellipse at 70% 40%, rgba(212,175,55,0.06) 0%, transparent 60%), var(--bg)', borderBottom: '1px solid var(--border)' }}
+      >
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          {/* Text */}
+          <div className="lg:col-span-2 order-2 lg:order-1">
+            <div className="section-label mb-4">Contact</div>
+            <h1 className="font-serif font-black text-5xl md:text-6xl leading-tight mb-6" style={{ color: 'var(--text)' }}>
+              Let&apos;s<br/><span className="gradient-gold">Connect</span>
+            </h1>
+            <p className="text-lg leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+              For speaking engagements, media enquiries, workshop facilitation, or simply to share your thoughts on the book.
+            </p>
+          </div>
+
+          {/* Big elegant photo */}
+          <div className="lg:col-span-3 order-1 lg:order-2 flex justify-center">
+            <div
+              className="relative rounded-2xl overflow-hidden w-full"
+              style={{
+                maxWidth: 640,
+                aspectRatio: '16 / 10',
+                border: '1px solid var(--accent-border)',
+                boxShadow: '0 40px 80px rgba(0,0,0,0.55)',
+              }}
+            >
+              <img
+                src="/vikas-prasad.jpg"
+                alt="Dr. Vikas Prasad"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }}
+              />
+              {/* Subtle top gradient for depth */}
+              <div
+                className="absolute top-0 left-0 right-0 h-1/3"
+                style={{ background: 'linear-gradient(to bottom, rgba(10,10,10,0.35) 0%, transparent 100%)' }}
+              />
+              {/* Name overlay */}
+              <div
+                className="absolute bottom-0 left-0 right-0 px-7 py-6"
+                style={{ background: 'linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.4) 60%, transparent 100%)' }}
+              >
+                <p className="font-serif font-bold text-2xl" style={{ color: 'var(--text)' }}>Dr. Vikas Prasad</p>
+                <p className="text-sm mt-1" style={{ color: 'var(--gold)' }}>Author · Negotiation Expert · Available for Speaking</p>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1" style={{ background: 'linear-gradient(90deg, var(--gold), transparent)' }} />
+              {/* Corner frame accent */}
+              <div className="absolute top-5 left-5 w-10 h-10 pointer-events-none" style={{ borderTop: '2px solid var(--gold)', borderLeft: '2px solid var(--gold)', opacity: 0.6 }} />
+              <div className="absolute top-5 right-5 w-10 h-10 pointer-events-none" style={{ borderTop: '2px solid var(--gold)', borderRight: '2px solid var(--gold)', opacity: 0.6 }} />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -144,49 +186,4 @@ export default function ContactPage() {
 
             {/* Engagements */}
             <div className="card-glow p-6">
-              <h3 className="font-serif font-bold text-lg mb-4" style={{ color: 'var(--text)' }}>Speaking & Workshops</h3>
-              <ul className="space-y-3 text-sm">
-                {[
-                  'Keynote speaking at corporate events and summits',
-                  'Negotiation masterclasses and workshops',
-                  'Executive coaching and advisory',
-                  'Media interviews and podcasts',
-                  'Academic lectures and business school sessions',
-                ].map(item => (
-                  <li key={item} className="flex items-start gap-2" style={{ color: 'var(--text-muted)' }}>
-                    <span className="mt-0.5 font-bold flex-shrink-0" style={{ color: 'var(--gold)' }}>✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Book */}
-            <div className="card-glow p-6">
-              <p className="font-serif italic text-sm mb-1" style={{ color: 'var(--gold)' }}>The Negotiation Code</p>
-              <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>Beyond the Table · INR 699 / $27</p>
-              <div className="flex gap-2 flex-wrap">
-                <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3">Amazon India</a>
-                <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Flipkart</a>
-                <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Amazon US</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quote */}
-      <section
-        className="py-16 px-6 text-center"
-        style={{ background: 'linear-gradient(135deg, #1a1408, #0a0a0a)', borderTop: '1px solid var(--accent-border)' }}
-      >
-        <div className="max-w-2xl mx-auto">
-          <p className="font-serif italic text-lg md:text-xl mb-4" style={{ color: 'var(--text-muted)' }}>
-            &ldquo;The strongest negotiators are those who understand the unseen forces shaping every conversation.&rdquo;
-          </p>
-          <p className="text-sm" style={{ color: 'var(--gold)' }}>— Dr. Vikas Prasad, The Negotiation Code</p>
-        </div>
-      </section>
-    </>
-  )
-}
+           
