@@ -208,9 +208,9 @@ export default function ContactPage() {
               <p className="font-serif italic text-sm mb-1" style={{ color: 'var(--gold)' }}>The Negotiation Code</p>
               <p className="text-xs mb-4" style={{ color: 'var(--text-muted)' }}>Beyond the Table · INR 699 / $27</p>
               <div className="flex gap-2 flex-wrap">
-                <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3">Amazon India</a>
-                <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Flipkart</a>
-                <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Amazon US</a>
+                <a href="https://link.amazon/B0egR2Wtl" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3">Amazon</a>
+                <a href="https://www.flipkart.com/product/p/itme?pid=9789347494604" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Flipkart</a>
+                <a href="https://www.verseskindlerpublication.com/product-page/the-negotiation-code-beyond-the-table" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3">Publisher</a>
               </div>
             </div>
           </div>

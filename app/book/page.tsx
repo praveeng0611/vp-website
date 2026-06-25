@@ -181,10 +181,10 @@ export default function BookPage() {
             Get Your Copy Today
           </h2>
           <p className="font-serif italic mb-1" style={{ color: 'var(--gold)' }}>INR 699 · $27</p>
-          <p className="text-sm mb-8" style={{ color: 'var(--text-muted)' }}>Available on Amazon India, Flipkart, and Amazon US</p>
+          <p className="text-sm mb-8" style={{ color: 'var(--text-muted)' }}>Available on Amazon, Flipkart, and our Publisher</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {BOOK.purchaseLinks.map(({ label, url, icon }) => (
-              <a key={label} href={url} target="_blank" rel="noopener noreferrer" className={label === 'Amazon India' ? 'btn-gold' : 'btn-outline'}>
+              <a key={label} href={url} target="_blank" rel="noopener noreferrer" className={label === 'Amazon' ? 'btn-gold' : 'btn-outline'}>
                 {icon} {label}
               </a>
             ))}

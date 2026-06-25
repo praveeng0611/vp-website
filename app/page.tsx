@@ -390,11 +390,14 @@ export default function HomePage() {
           </p>
           <p className="text-sm mb-8" style={{ color: 'var(--gold)' }}>— Dr. Vikas Prasad, Preface</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-gold">
-              Buy on Amazon India
+            <a href="https://link.amazon/B0egR2Wtl" target="_blank" rel="noopener noreferrer" className="btn-gold">
+              Buy on Amazon
             </a>
-            <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline">
+            <a href="https://www.flipkart.com/product/p/itme?pid=9789347494604" target="_blank" rel="noopener noreferrer" className="btn-outline">
               Buy on Flipkart
+            </a>
+            <a href="https://www.verseskindlerpublication.com/product-page/the-negotiation-code-beyond-the-table" target="_blank" rel="noopener noreferrer" className="btn-outline">
+              Buy from Publisher
             </a>
           </div>
         </div>

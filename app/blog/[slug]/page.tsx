@@ -187,8 +187,8 @@ export default function BlogPostPage({ params }: Props) {
                   Explore Book →
                 </Link>
                 <div className="flex gap-2 mt-3">
-                  <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-outline flex-1 justify-center text-xs py-2">Amazon</a>
-                  <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline flex-1 justify-center text-xs py-2">Flipkart</a>
+                  <a href="https://link.amazon/B0egR2Wtl" target="_blank" rel="noopener noreferrer" className="btn-outline flex-1 justify-center text-xs py-2">Amazon</a>
+                  <a href="https://www.flipkart.com/product/p/itme?pid=9789347494604" target="_blank" rel="noopener noreferrer" className="btn-outline flex-1 justify-center text-xs py-2">Flipkart</a>
                 </div>
               </div>
             </div>

@@ -68,11 +68,14 @@ export default function Footer() {
               ISBN: 978-93-47494-49-9
             </p>
             <div className="flex flex-col gap-2">
-              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3 rounded-lg w-fit">
-                Amazon India
+              <a href="https://link.amazon/B0egR2Wtl" target="_blank" rel="noopener noreferrer" className="btn-gold text-xs py-2 px-3 rounded-lg w-fit">
+                Amazon
               </a>
-              <a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3 rounded-lg w-fit">
+              <a href="https://www.flipkart.com/product/p/itme?pid=9789347494604" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3 rounded-lg w-fit">
                 Flipkart
+              </a>
+              <a href="https://www.verseskindlerpublication.com/product-page/the-negotiation-code-beyond-the-table" target="_blank" rel="noopener noreferrer" className="btn-outline text-xs py-2 px-3 rounded-lg w-fit">
+                Publisher
               </a>
             </div>
           </div>

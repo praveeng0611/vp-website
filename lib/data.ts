@@ -3,16 +3,16 @@ export const BOOK = {
   subtitle: 'Beyond the Table',
   author: 'Dr. Vikas Prasad',
   publisher: 'Verses Kindler Publication',
-  publisherUrl: 'https://www.verseskindlerpublication.com',
+  publisherUrl: 'https://www.verseskindlerpublication.com/product-page/the-negotiation-code-beyond-the-table',
   year: 2026,
   isbn: '978-93-47494-49-9',
   edition: '1st Edition',
   priceINR: 699,
   priceUSD: 27,
   purchaseLinks: [
-    { label: 'Amazon India', url: 'https://www.amazon.in', icon: '📦' },
-    { label: 'Flipkart', url: 'https://www.flipkart.com', icon: '🛒' },
-    { label: 'Amazon US', url: 'https://www.amazon.com', icon: '🌐' },
+    { label: 'Amazon', url: 'https://link.amazon/B0egR2Wtl', icon: '📦' },
+    { label: 'Flipkart', url: 'https://www.flipkart.com/product/p/itme?pid=9789347494604', icon: '🛒' },
+    { label: 'Publisher', url: 'https://www.verseskindlerpublication.com/product-page/the-negotiation-code-beyond-the-table', icon: '🏛️' },
   ],
 }
 
